@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+}
+
+.navbar{
+    background-color: #b9418d; 
+    padding: 0;
+}
+
+.nav-link, .navbar-brand{
+    color: white;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");;
+}
+
+.navbar-toggler{
+    border: 1px solid white;
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+
+.btn-search{
+    color: white;
+    border: 1px solid white;
+    background-color: #b9418d;
+    border-radius: 8px;
+    width: 100px;
+}
+
+#hero{
+    padding: 20px;
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+}
+
+.hello h2{
+    color: white;
+    font-size: 80px;
+}
+
+h1{
+    font-size: 120px;
+    color: white;
+}
+
+#hero a{
+    background-color: white;
+    color: #b9418d;
+    font-size: 40px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#productosDestacados{
+    padding: 20px;
+}
+
+.destacados-title{
+    color: #b9418d;
+    font-size: 40px;
+    padding: 12px;
+}
+
+.card{
+    background-color: white;
+    border: 2px solid #b9418d;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.card-title, .card-text{
+    color: #b9418d;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+.btn{
+    background-color: #b9418d;
+    color: white;
+}
+
+#newProduct{
+    background-color: #b9418d;
+    background-size: cover;
+}
+
+#newProduct img{
+    position: relative;
+    left: 30%;
+}
+
+#newProduct .new-title{
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#newProduct .btn-new{
+    background-color: white;
+    color: #b9418d;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#info{
+    margin: 20px 0;
+}
+
+#info h6{
+    color: #b9418d;
+    padding-top: 10px;
+}
+
+.info-title a{
+    color: #b9418d;
+}
+
+.item-info{
+    color: #b9418d;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #b9418d;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.page-title{
+    font-size: 50px;
+    color: #b9418d;
+    padding: 20px 0;
+}
+
+.contact-text{
+    font-size: 20px;
+    color: #b9418d;
+    padding-bottom: 12px;
+}
+
+.form-label{
+    color: #b9418d;
+}
+
+.send{
+    background-color: #b9418d;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 0;
+    position: relative;
+    left: 45%;
+    margin-bottom: 106px;
+}
+
+.about-us p{
+    width: 50%;
+    font-size: 20px;
+    color: #b9418d;
+}
+
+.about-us img{
+    height: 400px;
+    width: 400px;
+}
+
+.about-map p, iframe{
+    width: 40% !important;
+    padding-top: 20px;
+}
+
+.about-map p{
+    font-size: 20px;
+    color: #b9418d;
+}
+
+.about-map iframe{
+    margin-bottom: 40px;
+}
+
+#register h2{
+    font-size: 50px;
+    color: #b9418d;
+}
+
+#register p{
+    color: #b9418d;
+}
+
+#register .btn{
+    position: relative;
+    left: 40%;
+    margin-bottom: 40px;
+}
+
+#productDescription{
+    margin-top: 20px;
+}
+
+#productDescription .productPhoto{
+    height: 400px;
+    width: 400px;
+    border: 2px solid #b9418d;
+    border-radius: 12px;
+}
+
+#productDescription p{
+    color: #b9418d;
+    font-size: 20px;
+}
+
+#seeMore{
+    padding-top: 100px;
+}
+
+#seeMore h5{
+    color: #b9418d;
+    padding-bottom: 30px;
+}
+
+.cart-item img{
+    height: 100px;
+    width: 100px;
+}
+
+
+@media (max-width: 576px){
+    h1{
+        font-size: 80px;
+    }
+
+    .hello h2{
+        font-size: 40px;
+    }
+
+    #hero a{
+        font-size: 20px;
+    }
+
+    #newProduct{
+        padding-bottom: 20px;
+    }
+
+    #newProduct img{
+        height: 230px;
+        position: unset;
+    }
+
+    #newProduct .new-title{
+        font-size: 20px;
+        padding: unset;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #newProduct .btn-new{
+        padding: 8px 12px;
+        position: relative;
+        left: 32%;
+    }
+
+    .about-us p{
+        width: 100%;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .about-map p, iframe{
+        width: 100% !important;
+        padding-top: 10px;
+    }
+    
+    .about-map p{
+        font-size: 16px;
+    }
+
+    .send{
+        margin-bottom: 85px;
+    }
+
+    #register .btn{
+        left: 35%;
+    }
+
+    #productDescription .productPhoto{
+        height: 300px;
+        width: 300px;
+    }
+}
