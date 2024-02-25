@@ -245,10 +245,42 @@ footer{
     padding-bottom: 30px;
 }
 
-.cart-item img{
-    height: 100px;
-    width: 100px;
+.card-cart{
+    border-bottom: 1px solid #b9418d;
 }
+
+.card-body-cart{
+    padding-left: 20px;
+}
+
+.delete{
+    color: #b9418d;
+}
+
+.price{
+    color: #b9418d;
+    padding-left: 20px;
+}
+
+.total-row{
+    margin-bottom: 40px;
+}
+
+.total{
+    color: #b9418d;
+}
+
+.sale{
+    background-color: #b9418d;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
 
 
 @media (max-width: 576px){
