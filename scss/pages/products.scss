@@ -1,0 +1,25 @@
+#productDescription{
+    margin-top: 20px;
+    .productPhoto{
+        height: 400px;
+        width: 400px;
+        border: 2px solid $color-primario;
+        border-radius: 12px;
+        @include media-query-mobile(){
+            height: 300px;
+            width: 300px;
+        }
+    }
+    p{
+        color: $color-primario;
+        font-size: 20px;
+    }
+}
+
+#seeMore{
+    padding-top: 100px;
+    h5{
+        color: $color-primario;
+        padding-bottom: 30px;
+    }
+}

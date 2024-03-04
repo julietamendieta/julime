@@ -1,0 +1,23 @@
+.contact-text{
+    font-size: 20px;
+    color: $color-primario;
+    padding-bottom: 12px;
+}
+
+.form-label{
+    color: $color-primario;
+}
+
+.send{
+    background-color: $color-primario;
+    color: $color-secundario;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 0;
+    position: relative;
+    left: 45%;
+    margin-bottom: 70px;
+    @include media-query-mobile(){
+        margin-bottom: 85px;
+    }
+}

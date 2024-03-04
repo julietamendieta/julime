@@ -1,0 +1,73 @@
+#hero{
+    padding: 20px;
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    .hello h2{
+        color: $color-secundario;
+        font-size: 80px;
+        @include media-query-mobile(){
+            font-size: 40px;
+        }
+    }
+    a{
+        background-color: $color-secundario;
+        color: $color-primario;
+        font-size: 40px;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 8px;
+        @include media-query-mobile(){
+            font-size: 20px;
+        }
+    }
+}
+
+#productosDestacados{
+    padding: 20px;
+    .destacados-title{
+        color: $color-primario;
+        font-size: 40px;
+        padding: 12px;
+    }
+}
+
+#newProduct{
+    background-color: rgb(185, 65, 141, 0.8);
+    background-size: cover;
+    @include media-query-mobile(){
+        padding-bottom: 20px;
+    }
+    img{
+        position: relative;
+        left: 30%;
+        @include media-query-mobile(){
+            height: 230px;
+            position: unset;
+        }
+    }
+    .new-title{
+        color: $color-secundario;
+        padding: 20px;
+        font-size: 40px;
+        @include media-query-mobile(){
+            font-size: 20px;
+            padding: unset;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    .btn-new{
+        background-color: $color-secundario;
+        color: $color-primario;
+        padding: 12px 24px;
+        border-radius: 8px;
+        margin-left: 20px;
+        text-decoration: none;
+        @include media-query-mobile(){
+            padding: 8px 12px;
+            position: relative;
+            left: 32%;
+        }
+    }
+}
+

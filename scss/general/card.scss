@@ -1,0 +1,17 @@
+.card{
+    background-color: $color-secundario;
+    border: 2px solid $color-primario;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    .card-title, .card-text{
+        color: $color-primario;
+    }
+    .card-img-top{
+        height: 300px;
+        border-bottom: 2px solid $color-primario;
+    }
+    .btn{
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
+}

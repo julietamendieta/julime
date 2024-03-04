@@ -1,0 +1,13 @@
+h1{
+    font-size: 120px;
+    color: $color-secundario;
+    @include media-query-mobile(){
+        font-size: 80px;
+    }
+}
+
+.page-title{
+    font-size: 50px;
+    color: $color-primario;
+    padding: 20px 0;
+}
