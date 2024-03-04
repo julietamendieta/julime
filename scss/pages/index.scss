@@ -9,7 +9,7 @@
             font-size: 40px;
         }
     }
-    a{
+    .shop{
         background-color: $color-secundario;
         color: $color-primario;
         font-size: 40px;
@@ -32,7 +32,7 @@
 }
 
 #newProduct{
-    background-color: rgb(185, 65, 141, 0.8);
+    background: linear-gradient(90deg, rgba(185,65,141,0.6092086834733893) 0%, rgba(185,65,141,1) 70%);
     background-size: cover;
     @include media-query-mobile(){
         padding-bottom: 20px;
@@ -59,6 +59,7 @@
     .btn-new{
         background-color: $color-secundario;
         color: $color-primario;
+        font-size: 20px;
         padding: 12px 24px;
         border-radius: 8px;
         margin-left: 20px;

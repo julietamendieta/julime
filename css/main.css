@@ -4,6 +4,11 @@
   font-family: "Syne", sans-serif;
 }
 
+.btn, .send {
+  background-color: #b9418d;
+  color: #ffffff;
+}
+
 .card {
   background-color: #ffffff;
   border: 2px solid #b9418d;
@@ -16,10 +21,6 @@
 .card .card-img-top {
   height: 300px;
   border-bottom: 2px solid #b9418d;
-}
-.card .btn {
-  background-color: #b9418d;
-  color: #ffffff;
 }
 
 h1 {
@@ -44,15 +45,20 @@ h1 {
 }
 .navbar .nav-link, .navbar .navbar-brand {
   color: #ffffff;
+  transition: all 1s ease;
+}
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+  transform: scale(0.8, 0.8);
+  transition: all 1s ease;
+}
+.navbar .navbar-brand {
+  font-size: 40px;
 }
 .navbar .navbar-toggler {
   border: 1px solid #ffffff;
 }
 .navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar .navbar-brand {
-  font-size: 40px;
 }
 .navbar .btn-search {
   color: #ffffff;
@@ -104,7 +110,7 @@ footer {
     font-size: 40px;
   }
 }
-#hero a {
+#hero .shop {
   background-color: #ffffff;
   color: #b9418d;
   font-size: 40px;
@@ -113,7 +119,7 @@ footer {
   border-radius: 8px;
 }
 @media (max-width: 576px) {
-  #hero a {
+  #hero .shop {
     font-size: 20px;
   }
 }
@@ -128,7 +134,7 @@ footer {
 }
 
 #newProduct {
-  background-color: rgba(185, 65, 141, 0.8);
+  background: linear-gradient(90deg, rgba(185, 65, 141, 0.6092086835) 0%, rgb(185, 65, 141) 70%);
   background-size: cover;
 }
 @media (max-width: 576px) {
@@ -162,6 +168,7 @@ footer {
 #newProduct .btn-new {
   background-color: #ffffff;
   color: #b9418d;
+  font-size: 20px;
   padding: 12px 24px;
   border-radius: 8px;
   margin-left: 20px;
@@ -259,8 +266,6 @@ footer {
 }
 
 .send {
-  background-color: #b9418d;
-  color: #ffffff;
   padding: 6px 8px;
   border-radius: 8px;
   border: 0;
@@ -309,15 +314,13 @@ footer {
 #register p, #register a {
   color: #b9418d;
 }
-#register .btn {
+#register .btn, #register .send {
   position: relative;
   left: 40%;
   margin-bottom: 40px;
-  background-color: #b9418d;
-  color: #ffffff;
 }
 @media (max-width: 576px) {
-  #register .btn {
+  #register .btn, #register .send {
     left: 35%;
   }
 }

@@ -10,8 +10,6 @@
         position: relative;
         left: 40%;
         margin-bottom: 40px;
-        background-color: $color-primario;
-        color: $color-secundario;
         @include media-query-mobile(){
             left: 35%;
         }

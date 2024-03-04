@@ -9,8 +9,7 @@
 }
 
 .send{
-    background-color: $color-primario;
-    color: $color-secundario;
+    @extend.btn;
     padding: 6px 8px;
     border-radius: 8px;
     border: 0;
