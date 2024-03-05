@@ -16,6 +16,9 @@
         padding: 12px 24px;
         text-decoration: none;
         border-radius: 8px;
+        &:hover{
+            box-shadow:  20px 20px 60px #9d3778, -20px -20px 60px #d54ba2;
+        }
         @include media-query-mobile(){
             font-size: 20px;
         }
@@ -32,7 +35,7 @@
 }
 
 #newProduct{
-    background: linear-gradient(90deg, rgba(185,65,141,0.6092086834733893) 0%, rgba(185,65,141,1) 70%);
+    background-color: $color-primario;
     background-size: cover;
     @include media-query-mobile(){
         padding-bottom: 20px;

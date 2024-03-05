@@ -118,6 +118,9 @@ footer {
   text-decoration: none;
   border-radius: 8px;
 }
+#hero .shop:hover {
+  box-shadow: 20px 20px 60px #9d3778, -20px -20px 60px #d54ba2;
+}
 @media (max-width: 576px) {
   #hero .shop {
     font-size: 20px;
@@ -134,7 +137,7 @@ footer {
 }
 
 #newProduct {
-  background: linear-gradient(90deg, rgba(185, 65, 141, 0.6092086835) 0%, rgb(185, 65, 141) 70%);
+  background-color: #b9418d;
   background-size: cover;
 }
 @media (max-width: 576px) {
