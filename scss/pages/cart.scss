@@ -22,8 +22,7 @@
         color: $color-primario;
     }
     .sale{
-        background-color: $color-primario;
-        color: $color-secundario;
+        @extend.btn;
         padding: 12px 24px;
         text-decoration: none;
         width: fit-content;
