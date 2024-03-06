@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Syne", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto 25px;
+  grid-template-areas: "header header header header" "main main main aside" "footer footer footer footer";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+@media (max-width: 576px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px auto auto 25px;
+    grid-template-areas: "header" "main" "aside" "footer";
+  }
+}
+body header {
+  grid-area: header;
+  background-color: lightblue;
+}
+body header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  body header ul {
+    justify-content: center;
+  }
+}
+body header li {
+  color: blueviolet;
+  list-style-type: none;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+body header li:nth-of-type(3) {
+  font-size: 35px;
+  font-weight: 600;
+}
+@media (max-width: 576px) {
+  body header li {
+    padding: 4px 3px;
+    font-size: 12px;
+  }
+  body header li:nth-of-type(3) {
+    font-size: 14px;
+  }
+}
+body main {
+  grid-area: main;
+  background-color: lightpink;
+}
+body main #grid-hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: blueviolet;
+  padding: 20px 0;
+  text-align: center;
+}
+body main #grid-hello h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+body main #grid-hello h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  body main #grid-hello {
+    padding: 10px 0;
+  }
+  body main #grid-hello h1 {
+    font-size: 40px;
+  }
+  body main #grid-hello h2 {
+    font-size: 18px;
+  }
+}
+body main #grid-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+body main #grid-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main #grid-card .card img {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+}
+body main #grid-card .card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: blueviolet;
+  text-align: center;
+  padding: 8px;
+}
+body main #grid-card .card p {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  body main #grid-card .card p {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  body main #grid-card {
+    padding-top: 10px;
+  }
+}
+body aside {
+  grid-area: aside;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body aside img {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+body aside h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: blueviolet;
+  text-align: center;
+  padding: 8px;
+}
+@media (max-width: 576px) {
+  body aside h3 {
+    font-size: 16px;
+  }
+}
+body aside p {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 20px;
+}
+@media (max-width: 576px) {
+  body aside p {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+}
+body aside h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: blueviolet;
+  padding-top: 10px;
+}
+body footer {
+  grid-area: footer;
+  background-color: lightsteelblue;
+}
+body footer p {
+  color: blueviolet;
+  font-size: 16px;
+}
+@media (max-width: 576px) {
+  body footer p {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main-grid.css.map */
