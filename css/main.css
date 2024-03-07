@@ -84,7 +84,8 @@ footer {
   margin: 10px 0;
   background-color: #b9418d;
 }
-#info h6 {
+#info h2 {
+  font-size: 16px;
   color: #ffffff;
   padding-top: 10px;
 }
@@ -135,10 +136,16 @@ footer {
   font-size: 40px;
   padding: 12px;
 }
+@media (max-width: 576px) {
+  #productosDestacados {
+    padding: unset;
+  }
+}
 
 #newProduct {
   background-color: #b9418d;
   background-size: cover;
+  padding-bottom: 20px;
 }
 @media (max-width: 576px) {
   #newProduct {
@@ -231,7 +238,7 @@ footer {
 #cart-products .card-cart .card-body-cart {
   padding-left: 20px;
 }
-#cart-products .card-cart .card-body-cart h5, #cart-products .card-cart .card-body-cart p {
+#cart-products .card-cart .card-body-cart h3, #cart-products .card-cart .card-body-cart p {
   color: #b9418d;
 }
 #cart-products .card-cart .delete {
@@ -303,7 +310,8 @@ footer {
 #seeMore {
   padding-top: 100px;
 }
-#seeMore h5 {
+#seeMore h2 {
+  font-size: 30px;
   color: #b9418d;
   padding-bottom: 30px;
 }

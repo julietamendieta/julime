@@ -30,6 +30,8 @@ body{
         "aside"
         "footer"
     ;
+    column-gap: unset;
+    row-gap: 6px;
     }
     header{
         grid-area: header;
@@ -39,25 +41,24 @@ body{
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            @include media-query-mobile(){
-                justify-content: center;
-            }
-        }
-        li{
-            color: blueviolet;
-            list-style-type: none;
-            padding: 20px;
-            font-size: 30px;
-            font-weight: 500;
-            &:nth-of-type(3){
-                font-size: 35px;
-                font-weight: 600;
-            }
-            @include media-query-mobile(){
-                padding: 4px 3px;
-                font-size: 12px;
-                &:nth-of-type(3){
-                    font-size: 14px;
+            li{
+                color: blueviolet;
+                list-style-type: none;
+                padding: 20px;
+                font-size: 30px;
+                font-weight: 500;
+                a{
+                    color: blueviolet;
+                    font-size: 35px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                @include media-query-mobile(){
+                    padding: 4px 3px;
+                    font-size: 12px;
+                    a{
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -156,7 +157,7 @@ body{
             font-size: 20px;
             font-weight: 400;
             text-align: center;
-            padding: 0 20px;
+            padding: 0 30px;
             @include media-query-mobile(){
                 font-size: 14px;
                 padding-bottom: 10px;
@@ -173,6 +174,7 @@ body{
         grid-area: footer;
         background-color: lightsteelblue;
         p{
+            text-align: center;
             color: blueviolet;
             font-size: 16px;
             @include media-query-mobile(){
