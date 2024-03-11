@@ -1,16 +1,16 @@
-@import './general/reset.scss';
-@import './general/variables.scss';
-@import './general/button.scss';
-@import './general/card.scss';
-@import './general/title.scss';
+@import 'general/reset';
+@import 'general/variables';
+@import 'general/button';
+@import 'general/card';
+@import 'general/title';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
-@import './layout/info.scss';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/info';
 
-@import './pages/index.scss';
-@import './pages/about.scss';
-@import './pages/cart.scss';
-@import './pages/contact.scss';
-@import './pages/products.scss';
-@import './pages/register.scss';
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/cart';
+@import 'pages/contact';
+@import 'pages/products';
+@import 'pages/register';

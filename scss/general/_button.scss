@@ -1,4 +1,7 @@
 .btn{
     background-color: $color-primario;
     color: $color-secundario;
+    &:hover{
+        transition: all 0.5s ease;
+    }
 }

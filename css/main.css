@@ -8,6 +8,9 @@
   background-color: #b9418d;
   color: #ffffff;
 }
+.btn:hover, .send:hover, #cart-products .sale:hover {
+  transition: all 0.5s ease;
+}
 
 .card {
   background-color: #ffffff;
@@ -96,6 +99,10 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
+#info .item-info:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s ease;
+}
 
 #hero {
   padding: 20px;
@@ -121,6 +128,7 @@ footer {
 }
 #hero .shop:hover {
   box-shadow: 20px 20px 60px #9d3778, -20px -20px 60px #d54ba2;
+  transition: all 0.5s ease;
 }
 @media (max-width: 576px) {
   #hero .shop {
@@ -162,18 +170,21 @@ footer {
     position: unset;
   }
 }
-#newProduct .new-title {
+#newProduct .new-title, #newProduct .new-title-name {
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   font-size: 40px;
 }
 @media (max-width: 576px) {
-  #newProduct .new-title {
+  #newProduct .new-title, #newProduct .new-title-name {
     font-size: 20px;
     padding: unset;
     text-align: center;
     margin-bottom: 10px;
   }
+}
+#newProduct .new-title-name {
+  padding-bottom: 50px;
 }
 #newProduct .btn-new {
   background-color: #ffffff;
@@ -183,6 +194,10 @@ footer {
   border-radius: 8px;
   margin-left: 20px;
   text-decoration: none;
+}
+#newProduct .btn-new:hover {
+  box-shadow: 10px 10px 40px #ffffff, -10px -10px 40px #ffffff;
+  transition: all 0.5s ease;
 }
 @media (max-width: 576px) {
   #newProduct .btn-new {

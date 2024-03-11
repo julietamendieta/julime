@@ -18,6 +18,7 @@
         border-radius: 8px;
         &:hover{
             box-shadow:  20px 20px 60px #9d3778, -20px -20px 60px #d54ba2;
+            transition: all 0.5s ease;
         }
         @include media-query-mobile(){
             font-size: 20px;
@@ -54,7 +55,7 @@
     }
     .new-title{
         color: $color-secundario;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         font-size: 40px;
         @include media-query-mobile(){
             font-size: 20px;
@@ -62,6 +63,10 @@
             text-align: center;
             margin-bottom: 10px;
         }
+    }
+    .new-title-name{
+        @extend.new-title;
+        padding-bottom: 50px;
     }
     .btn-new{
         background-color: $color-secundario;
@@ -71,6 +76,10 @@
         border-radius: 8px;
         margin-left: 20px;
         text-decoration: none;
+        &:hover{
+            box-shadow: 10px 10px 40px #ffffff, -10px -10px 40px #ffffff;
+            transition: all 0.5s ease;
+        }
         @include media-query-mobile(){
             padding: 8px 12px;
             position: relative;
