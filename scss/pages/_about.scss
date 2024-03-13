@@ -8,6 +8,9 @@
             font-size: 16px;
             padding-top: 10px;
         }
+        @include media-query-tablet(){
+            width: 40%;
+        }
     }
     img{
         height: 400px;
@@ -16,15 +19,8 @@
 }
 
 .about-map{ 
-    p, iframe{
-        width: 40% !important;
-        padding-top: 20px;
-        @include media-query-mobile(){
-            width: 100% !important;
-            padding-top: 10px;
-        }
-    }
     p{
+        width: 40% !important;
         font-size: 20px;
         color: $color-primario;
         @include media-query-mobile(){
@@ -32,6 +28,15 @@
         }
     }
     iframe{
+        width: 40% !important;
         margin-bottom: 40px;
     }
+    p, iframe{
+        padding-top: 20px;
+        @include media-query-mobile(){
+            width: 100% !important;
+            padding-top: 10px;
+        }
+    }
 }
+

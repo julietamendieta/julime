@@ -26,9 +26,9 @@
     }
 }
 
-#productosDestacados{
+#featuredProducts{
     padding: 20px;
-    .destacados-title{
+    .featured-title{
         color: $color-primario;
         font-size: 40px;
         padding: 12px;
@@ -46,11 +46,8 @@
         padding-bottom: 20px;
     }
     img{
-        position: relative;
-        left: 30%;
         @include media-query-mobile(){
             height: 230px;
-            position: unset;
         }
     }
     .new-title{
@@ -67,6 +64,9 @@
     .new-title-name{
         @extend.new-title;
         padding-bottom: 50px;
+        @include media-query-mobile(){
+            padding-bottom: 20px;
+        }
     }
     .btn-new{
         background-color: $color-secundario;

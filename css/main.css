@@ -136,16 +136,16 @@ footer {
   }
 }
 
-#productosDestacados {
+#featuredProducts {
   padding: 20px;
 }
-#productosDestacados .destacados-title {
+#featuredProducts .featured-title {
   color: #b9418d;
   font-size: 40px;
   padding: 12px;
 }
 @media (max-width: 576px) {
-  #productosDestacados {
+  #featuredProducts {
     padding: unset;
   }
 }
@@ -160,14 +160,9 @@ footer {
     padding-bottom: 20px;
   }
 }
-#newProduct img {
-  position: relative;
-  left: 30%;
-}
 @media (max-width: 576px) {
   #newProduct img {
     height: 230px;
-    position: unset;
   }
 }
 #newProduct .new-title, #newProduct .new-title-name {
@@ -185,6 +180,11 @@ footer {
 }
 #newProduct .new-title-name {
   padding-bottom: 50px;
+}
+@media (max-width: 576px) {
+  #newProduct .new-title-name {
+    padding-bottom: 20px;
+  }
 }
 #newProduct .btn-new {
   background-color: #ffffff;
@@ -219,22 +219,18 @@ footer {
     padding-top: 10px;
   }
 }
+@media (min-width: 576px) and (max-width: 1024px) {
+  .about-us p {
+    width: 40%;
+  }
+}
 .about-us img {
   height: 400px;
   width: 400px;
 }
 
-.about-map p, .about-map iframe {
-  width: 40% !important;
-  padding-top: 20px;
-}
-@media (max-width: 576px) {
-  .about-map p, .about-map iframe {
-    width: 100% !important;
-    padding-top: 10px;
-  }
-}
 .about-map p {
+  width: 40% !important;
   font-size: 20px;
   color: #b9418d;
 }
@@ -244,7 +240,17 @@ footer {
   }
 }
 .about-map iframe {
+  width: 40% !important;
   margin-bottom: 40px;
+}
+.about-map p, .about-map iframe {
+  padding-top: 20px;
+}
+@media (max-width: 576px) {
+  .about-map p, .about-map iframe {
+    width: 100% !important;
+    padding-top: 10px;
+  }
 }
 
 #cart-products .card-cart {

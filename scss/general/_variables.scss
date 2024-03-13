@@ -6,3 +6,9 @@ $color-secundario:#ffffff;
         @content;
     }
 }
+
+@mixin media-query-tablet{
+    @media (min-width: 576px) and (max-width: 1024px){
+        @content;
+    }
+}
